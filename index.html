@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Najmi</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#Skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Najmi Khaeri Arrisa Putra</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#Skills" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile-1.jpg" alt="Najmi Khaeri Arrisa Putra profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Najmi Khaeri Arrisa Putra</h1>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/najmikhaeriap/'" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/NajmiKhaeri'" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/about-pic.JPG" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Skills icon" class="icon" />
+            <h3>Pengalaman</h3>
+            <p>PT. Kazah Digital Semesta</p>
+            <p align="left">● Membuat Artikel Website (Copywriter). <br />
+              ● Desain gambar menggunakan Microsoft Power Point. <br />
+              ● Mempelajari sedikit teknik SEO (Search Engine Optimization)<br /></p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Pendidikan</h3>
+            <p>SMP Negeri 1 Sumber</p><br />
+            <p>SMK Negeri 1 Cirebon<br> (Rekayasa Perangkat Lunak)</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            Saya Najmi Khaeri Arrisa Putra, seorang lulusan dari SMK Negeri 1 Cirebon Jurusan Rekayasa Perangkat Lunak.
+            Saya sangat menyukai dengan dunia digital.
+            Saya juga memiliki pengalaman kursus dan Praktik Kerja Lapangan. Saya tertarik mengembangkan karir di bidang
+            IT, Admin atau Copywriting.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#Skills'" />
+  </section>
+  <br><br>
+  <section id="Skills">
+    <h1 class="title">Keahlian</h1>
+    <div class="Skills-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+              <div>
+                <h3>HTML</h3>
+                <p>Menengah</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+              <div>
+                <h3>CSS</h3>
+                <p>Menengah</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Dasar</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+              <div>
+                <h3>PHP</h3>
+                <p>Dasar</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+              <div>
+                <h3>LINUX</h3>
+                <p>Dasar</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+              <div>
+                <h3>Copy Writer</h3>
+                <p>Menengah</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+              <div>
+                <h3>Bahasa Inggris</h3>
+                <p>Dasar</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+              <div>
+                <h3>WordPress</h3>
+                <p>Menengah</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <section id="projects">
+    <h1 class="title">Project</h1>
+    <div class="Skills-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="Skills-sub-title project-title">Project One</h2>
+          <p>ini merupakan salah satu artikel hasil karya saya saat sedang PKL yang membuatnya berhasil mencapai
+            peringkat 1 Google
+            dari tahun 2022 hingga saat ini</p><br>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://istighfar.id/iklan-digital-wonogiri-2/'">
+              View
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="Skills-sub-title project-title">Project Two</h2>
+          <p>ini merupakan projek aplikasi laundry berbasis web, dengan menggunakan bahasa HTML, CSS, Javascript dan
+            PHP
+          </p><br>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/NajmiKhaeri/apk_laundry'">
+              Github
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="Skills-sub-title project-title">Project Three</h2>
+          <p>ini merupakan projek aplikasi Hotel berbasis web, dengan menggunakan bahasa HTML, CSS, Javascript dan PHP
+          </p><br>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/NajmiKhaeri/Najmi_Ujikom'">
+              Github
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  <br><br>
+  <section id="projects">
+    <h1 class="title">Sertifikat</h1>
+    <div class="Skills-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/sertifikat-1.png" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="Skills-sub-title project-title">Sertifikat 1</h2>
+          <p>Sertifikat Cybersecurity Training Sub - batch 3 2021 oleh Infradigital Foundation</p><br>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/sertifikat-2.png" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="Skills-sub-title project-title">Sertifikat 2</h2>
+          <p>Sertifikat Ready4Security - Indonesian Training oleh Infradigital Foundation
+          </p><br>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  <section id="contact">
+    <h1 class="title">Kontak</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:najmikhaeriarrisaputra@gmail.com">najmikhaeriarrisaputra@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/najmikhaeriap/">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2023 Najmi Khaeri Arrisa Putra. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
